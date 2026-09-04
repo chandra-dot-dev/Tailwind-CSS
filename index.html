@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Grocery Delivery</title>
+  </head>
+
+  <body>
+    <div
+      class="relative min-h-screen overflow-hidden bg-[url('/images/image.png')] bg-cover bg-center bg-no-repeat text-white"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black/30"></div>
+
+      <!-- Main Container -->
+      <div
+        class="relative z-10 mx-auto min-h-screen max-w-[1600px] px-5 py-5 sm:px-8 sm:py-6 md:px-10 lg:px-12"
+      >
+        <!-- ================= NAVBAR ================= -->
+        <nav class="flex items-center justify-between">
+          <!-- Logo -->
+          <img
+            src="images/logo1.png"
+            alt="Ordify Logo"
+            class="h-10 w-auto sm:h-12 md:h-14 lg:h-16"
+          />
+
+          <!-- Desktop Navigation -->
+          <ul
+            class="hidden items-center gap-6 text-sm sm:gap-8 md:flex md:text-base lg:gap-10"
+          >
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-yellow-400"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-yellow-400"
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-yellow-400"
+              >
+                Features
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="transition hover:text-yellow-400"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Right Side -->
+          <div class="flex items-center gap-4">
+            <!-- Cart -->
+            <img
+              src="images/cart.png"
+              alt="Shopping Cart"
+              class="h-7 w-auto sm:h-8 md:h-9 lg:h-10"
+            />
+
+            <!-- Mobile Menu Button -->
+            <button
+              class="flex h-9 w-9 items-center justify-center rounded-md border border-white/40 md:hidden"
+              aria-label="Open menu"
+            >
+              <span class="text-xl">☰</span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- ================= HERO ================= -->
+        <main
+          class="flex min-h-[calc(100vh-90px)] flex-col justify-center lg:flex-row lg:items-center lg:justify-between"
+        >
+          <!-- Hero Content -->
+          <section
+            class="relative z-10 w-full max-w-xl pt-12 sm:pt-16 md:max-w-2xl lg:w-[50%] lg:pt-0"
+          >
+            <!-- Heading -->
+            <h1
+              class="text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+            >
+              Groceries
+              <br />
+
+              delivery in
+              <span class="text-yellow-400">
+                10 min.
+              </span>
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="mt-5 max-w-lg text-sm leading-6 text-gray-200 sm:mt-6 sm:text-base sm:leading-7"
+            >
+              Get fresh groceries delivered straight to your doorstep.
+              Shop your daily essentials and receive them in just 10 minutes.
+            </p>
+
+            <!-- Buttons -->
+            <div
+              class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
+            >
+              <button
+                class="w-full rounded-full bg-yellow-400 px-7 py-3 font-medium text-black transition hover:bg-yellow-300 sm:w-auto"
+              >
+                Order Now
+              </button>
+
+              <button
+                class="w-full rounded-full border border-white/60 px-7 py-3 font-medium transition hover:bg-white hover:text-black sm:w-auto"
+              >
+                Available on Playstore
+              </button>
+            </div>
+          </section>
+
+          <!-- ================= HERO IMAGE ================= -->
+          <section
+            class="relative mt-8 flex w-full justify-center lg:mt-0 lg:w-[50%] lg:justify-end"
+          >
+            <img
+              src="images/grocery1.png"
+              alt="Fresh groceries"
+              class="w-[75%] max-w-[350px] sm:w-[65%] sm:max-w-[400px] md:w-[55%] md:max-w-[450px] lg:w-[90%] lg:max-w-[600px] xl:max-w-[680px]"
+            />
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
